@@ -4,9 +4,10 @@ from tkcalendar import DateEntry
 import ghasedakpack
 import datetime
 def send_sms():
-    
+    # create api key
         sms = ghasedakpack.Ghasedak("39a79a573ba0e90ee353b76acb178b8d33ee0626ed96cd7cb9ec984cf2612ac6")
         date_today=datetime.date.today()
+        # create formate date
         date_today = str(int(date_today.strftime("%d")))+"/"+str(int(date_today.strftime("%m")))+"/"+date_today.strftime("%Y")
 
         date_user=edate.get()
